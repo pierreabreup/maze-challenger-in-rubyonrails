@@ -1,0 +1,12 @@
+<h1>Maze generator</h1>
+
+<%= form_tag('generate', method: 'post', remote: true) do %>
+  <%= label_tag(:width, 'Width') %>
+  <%= text_field_tag(:width, nil, name:'board[width]', onkeyup:'removeNonNumbers(this)', onpaste:'removeNonNumbers(this)') %>
+  <%= label_tag(:height, 'Height') %>
+  <%= text_field_tag(:height, nil, name: 'board[height]', onkeyup:'removeNonNumbers(this)', onpaste:'removeNonNumbers(this)') %>
+  <%= submit_tag("Generate", data: { disable_with: "sending..." }) %>
+<% end %>
+<div id="alert-error"></div>
+<div id="maze-board"></div>
+<%= button_to('Show Path', show_path_path, remote: true, id: 'btn-show-path') %>

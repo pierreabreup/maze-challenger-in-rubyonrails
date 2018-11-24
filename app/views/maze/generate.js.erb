@@ -1,0 +1,17 @@
+var alertElement = document.getElementById('alert-error');
+alertElement.style.display = 'none';
+
+<% if @error_msg %>
+
+  alertElement.innerHTML = '<%= @error_msg %>';
+  alertElement.style.display = 'block';
+
+<% else %>
+
+  <%= render partial:'board', locals: { board: @maze_presenter } %>
+
+  var showPathButton = document.getElementById('btn-show-path');
+  showPathButton.style.display = 'block';
+
+<% end %>
+
