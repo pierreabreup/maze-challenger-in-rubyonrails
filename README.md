@@ -2,6 +2,8 @@
 
 This project is a maze challenge made in Rails 5 running on a docker container. The project runs on HTTP Port 3000.
 
+![Generated maze board](screenshot.png)
+
 # What is the project for?
 
 The project was made to help computer programmers applying for positions in companies, during the interview process. However, I strongly recommend that you DO NOT COPY THIS WHOLE PROJECT, but try to use it as reference for your solution. I suggest it to you because it is important to show your recruter how you solve problems in a smart way without doing "copy and paste".
