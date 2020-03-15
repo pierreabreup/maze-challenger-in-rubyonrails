@@ -12,14 +12,14 @@ It is worth noting that there are some bugs in this project, so feel free to fix
 
 # How to use?
 
-After you clone this project, follow these steps:
+After you've clone this project, follow these steps:
 - open a terminal session in your terminal tool (Iterm, Terminal, Putty)
 - go to the folder where you cloned the project (Ex.: ```cd cd maze-challenger-in-rubyonrails```)
 - type the command: ```make run```
 
 This command will run the container and open a session inside the container. If all goes well, the rails server is up ```* Listening on tcp://0.0.0.0:3000```
 
-Open your browser and type http://localhost:3000. When the page load finishes, you must fill widht and height fields and press the "Generate" button.
+Open your browser and type http://localhost:3000. When the page load finishes, you must fill width and height fields and press the "Generate" button.
 
 
 
@@ -34,7 +34,7 @@ Open your browser and type http://localhost:3000. When the page load finishes, y
           rake db:migrate
           rails s
           ````
-- When you finish reviewing the code, you can destroy the docker container, volume and images running the command ```make destroy```
-- Part of the solution came from https://rosettacode.org/wiki/Maze_generation#Ruby and https://rosettacode.org/wiki/Maze_solving#Ruby
+- When you finish to work with this project, you can destroy it running the command ```make destroy```
+- My solution was inspired on https://rosettacode.org/wiki/Maze_generation#Ruby and https://rosettacode.org/wiki/Maze_solving#Ruby
 
 
